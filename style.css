@@ -1,0 +1,21 @@
+body {
+    background: #DCEFFB;
+    color: #333333;
+    font-family: 'Lucida Sans', sans-serif;
+    margin: 0;
+    
+  }
+
+section {
+    width: 70vw;
+    height: 250px;
+    background-color: white;
+    display: flex;
+    object-fit: cover;
+    margin: 100px auto;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
