@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>todos los vinos</h1>
+<ul>
+{% for wine in object_list %}
+    <div>
+    {{wine.name}}
+    {{wine.variety}}
+    {{wine.grape}}
+    {{wine.cellar}}
+    {{wine.province}}
+    {{wine.year}}
+    {{wine.description}}
+    {{wine.price}}
+    </div>
+    <div>
+    {%for i in images%}
+        {%if i.wine_id == wine.pk%}
+        <img src="{{i.photo.url}}" alt="">
+        {%endif%}
+    {%endfor%}
+    </div>  
+    <hr>
+    <hr>
+{% endfor %}
+</ul>
+</body>
+</html>
