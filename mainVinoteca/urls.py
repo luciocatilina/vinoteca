@@ -23,9 +23,9 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin1/', admin.site.urls),
     #path('', TemplateView.as_view(template_name ='index.html')),
-    path('', include('store.urls'))
+    path('', include('store.urls')),
+    path('seller/', include('seller.urls')),
 
-    #path('seller/', include('seller.urls')),
 ]
 
 if settings.DEBUG:

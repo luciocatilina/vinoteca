@@ -102,6 +102,9 @@ class Wine(models.Model):
     description = models.TextField(null=False, blank=False)
     price = models.FloatField(null=False, blank=False)
 
+    def __srt__(self):
+        return self.name
+
 class WineImage(models.Model):
     wine = models.ForeignKey(Wine, on_delete=models.CASCADE)
     photo = models.ImageField(upload_to= 'wine_photos', null=False, blank=False)
