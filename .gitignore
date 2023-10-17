@@ -1,2 +1,6 @@
 env
 frontend/build
+frontend/src/styles/node_modules
+frontend/src/styles/scss
+frontend/src/styles/package-lock.json
+frontend/src/styles/package.json
